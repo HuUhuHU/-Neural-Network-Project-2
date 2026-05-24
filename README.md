@@ -7,7 +7,7 @@ A single notebook covers both parts of Project 2:
 1. **Part 1 (60%)** — Train a custom CNN (PreAct residual architecture) on CIFAR-10, with ablation studies and visualizations  
 2. **Part 2 (30%)** — Compare VGG-A vs VGG-A+BN and analyze the effect of BN on the loss landscape and gradients  
 
-**Report:** [`project_2_2026_report.md`](./project_2_2026_report.md) (export to PDF before submission)
+**Report:** (not included here)
 
 ---
 
