@@ -1,8 +1,6 @@
 # Neural Network Project 2 — CIFAR-10 & Batch Normalization
 
 **Course:** Neural Network and Deep Learning  
-**Author:** [Your Name]  
-**Student ID:** [Your Student ID]
 
 A single notebook covers both parts of Project 2:
 
