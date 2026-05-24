@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ```
 
 ```bash
-# Linux / macOS / AutoDL
+# Linux / macOS 
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -42,11 +42,11 @@ PJ2_2026/
 ├── README.md                    # This file
 ├── requirements.txt             # Python dependencies
 ├── project_2_2026.ipynb         # All code (Part 1 + Part 2)
-├── project_2_2026_report.md     # Experiment report (Markdown)
+├── project_2_2026_report.pdf    # Experiment report (Not included here)
 ├── data/                        # CIFAR-10 (auto-downloaded on first run)
 │   └── cifar-10-batches-py/
 ├── figures/                     # Training curves, ablation plots, VGG figures (generated after run)
-├── models/                      # Model checkpoints
+├── models/                      # Model checkpoints(in Google Drive)
 │   ├── cifarcnn_best.pth        # Part 1 main model (best checkpoint)
 │   ├── ablation/                # Best weights for each ablation group
 │   │   ├── ablation_structure/
@@ -60,19 +60,7 @@ PJ2_2026/
 
 ---
 
-## Reproduction
-
-1. **Clone the repo and `cd` into the project root.** All paths in the notebook are relative (`./data`, `./models`, etc.), so open it from the root directory.
-
-2. **Start Jupyter** and open `project_2_2026.ipynb`:
-
-   ```bash
-   jupyter lab
-   # or
-   jupyter notebook
-   ```
-
-3. **Run all cells in order**, or run section by section:
+3. **Sections**
 
    | Section | Content | Approx. time (GPU) |
    |---------|---------|-------------------|
@@ -133,23 +121,8 @@ print('test acc:', ckpt['test_acc'])
 
 ## Model Weights Download
 
-After training, zip `./models/` and upload to cloud storage; include the link in your report PDF.  
-(Replace with your actual link before submission.)
-
-**Weights link:** [Google Drive / Baidu Netdisk — fill in here]
+**Weights link:** https://drive.google.com/drive/folders/14Vjr5zV3nAe81NKTRhvmNk3vXi6BooKF?
+usp=sharing
 
 ---
 
-## Notes
-
-- **Working directory:** Run the notebook from the `PJ2_2026/` root; otherwise CIFAR-10 may re-download or fail to load.
-- **AutoDL:** Use the platform’s built-in JupyterLab; when training over SSH, `cd` to the project root first.
-- **Windows:** `NUM_WORKERS` is set to 0 on Windows and 2 on Linux in the notebook to avoid DataLoader multiprocessing issues.
-- **Reference repo:** `Neural-Network-Project-2-main/` is for study only; this implementation uses a different architecture and training setup (PreAct residuals, fixed LR, etc.).
-
----
-
-## References
-
-- CIFAR-10: [https://www.cs.toronto.edu/~kriz/cifar.html](https://www.cs.toronto.edu/~kriz/cifar.html)
-- PyTorch tutorials: [https://pytorch.org/tutorials/](https://pytorch.org/tutorials/)
